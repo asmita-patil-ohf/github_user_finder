@@ -4,8 +4,13 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color: bisque;
     align-items: center;
-
+    min-height: 100vh; 
+    margin: 0;  /* important */
 }
+*{
+    box-sizing: border-box;
+}
+
 h1{
     color:rgb(12, 66, 12);
     font-size: 400%;
@@ -34,7 +39,7 @@ button{
     padding:1%;
     color:bisque;
     background-color: rgb(20, 58, 20);
-    border: none;
+    border: rgb(20, 58, 20) solid 1px;
     border-radius: 14px;
     font-size: 100%;
 }
@@ -48,10 +53,87 @@ button:hover{
 footer{
     background-color: rgb(20, 58, 20);
     color: bisque;
-    max-width: 100%;
     text-align: center;
     padding: 20px;
     width: 100%;
-    bottom: 0%;
-    position: fixed;
+    margin-top: auto;   /* pushes footer to bottom */
+}
+/* Profile Card */
+.profile-card {
+    display: flex;
+    background:wheat;
+    padding: 20px;
+    border:solid 2px #055024;
+    border-radius: 12px;
+    margin:20px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 500px;
+}
+.left_profile{
+    width: 200px;
+    margin:4% 8% ;
+}
+.right_profile{
+    width: 200px;
+    margin: 10% 0;
+    justify-content: space-around;
+}
+/* Avatar */
+.avatar {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Name */
+.name {
+    margin: 0 5px;
+    font-size: 2rem;
+    color: #000000;
+}
+
+/* Stats container */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+/* Stats numbers */
+.stats h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: #0e7b3b;
+}
+
+/* Stats labels */
+.stats p {
+    margin: 0;
+    font-size: 12px;
+    color: rgb(75, 75, 75);
+}
+
+/* Profile button */
+.profile-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    padding: 8px 15px;
+    background: #10783b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.profile-btn:hover {
+    background: #09592a;
+}
+.not_found{
+    margin: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+.not_found p{
+    text-align: center;
+    font-size: 3rem;
+    color: red;
 }
